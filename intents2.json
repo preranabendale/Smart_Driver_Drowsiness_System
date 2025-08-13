@@ -1,0 +1,86 @@
+{
+  "intents": [
+    {
+      "tag": "eye_safety",
+      "patterns": [
+        "Aankhon ka dard ho raha hai",
+        "Mujhe neend si lag rahi hai",
+        "Aankhen thak gayi hain",
+        "Aankhon ko rest chahiye"
+      ],
+      "responses": [
+        "Aankhon ko relax karne ke liye thoda break lo.",
+        "Light kam karo aur aankhon ko 2 minute ke liye band karo.",
+        "Zyada drive mat karo, aankhon ko aaram do."
+      ]
+    },
+    {
+      "tag": "alertness_check",
+      "patterns": [
+        "Mujhe neend aa rahi hai",
+        "Main thak gaya hoon",
+        "Main active nahi mehsoos kar raha hoon"
+      ],
+      "responses": [
+        "Kya aap coffee break lena chahenge?",
+        "Lagta hai aapko rest ki zarurat hai.",
+        "Kya aap 5 minute ke liye gaadi side me laga ke rest lena chahenge?"
+      ]
+    },
+    {
+      "tag": "suggest_break",
+      "patterns": [
+        "Mujhe thoda rest chahiye",
+        "Kya nearby rest stop hai?",
+        "Break lena chahiye kya?"
+      ],
+      "responses": [
+        "Nearby rest stop mil gaya hai. Waha ruk sakte ho.",
+        "Chhoti break lena safe driving ke liye zaruri hai.",
+        "Aapke aas paas ek rest area hai. Kya aap waha rukna chahenge?"
+      ]
+    },
+    {
+      "tag": "emergency_contact",
+      "patterns": [
+        "Meri tabiyat kharab lag rahi hai",
+        "Help chahiye",
+        "Call karo kisi ko"
+      ],
+      "responses": [
+        "Aapki halat critical lag rahi hai, kya emergency contact ko call karun?",
+        "Main aapke emergency contact ko inform kar rahi hoon.",
+        "Main help bula rahi hoon. Aap safe rahiye."
+      ]
+    },
+    {
+      "tag": "music_suggestion",
+      "patterns": [
+        "Mujhe sone ka man ho raha hai",
+        "Energetic music bajao",
+        "Music chalu karo"
+      ],
+      "responses": [
+        "Kya aapko ek energetic song chalu karna hai?",
+        "Main ek upbeat song bajati hoon taaki aapko neend na aaye.",
+        "Music chalu kar rahi hoon. Enjoy karo aur safe drive karo!"
+      ]
+      {
+       "tag": "drowsy_signs",
+        "patterns": [
+    "Main baar baar jamhai le raha hoon",
+    "Aankhen bandh ho rahi hain",
+    "Main focus nahi kar pa raha hoon",
+    "Screen blur ho rahi hai",
+    "Main jaga nahi reh pa raha hoon"
+  ],
+  "responses": [
+    "Aapko neend aa rahi hai. Kripya break lijiye.",
+    "Lagta hai aap thak gaye hain. Thodi der rest lijiye.",
+    "Kya aap nearby rest stop pe rukna chahenge?"
+  ]
+}
+
+    }
+  ]
+}
