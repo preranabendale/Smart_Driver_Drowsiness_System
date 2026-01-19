@@ -57,11 +57,7 @@ def Drowsiness():
     # yawn time
     averageYawnTime = 2.5
 
-    """
-    Find the second largest contour in the ROI; 
-    Largest is the contour of the bottom half of the face.
-    Second largest is the lips and mouth when yawning.
-    """
+    
 
     def calculateContours(image, contours):
         cv2.drawContours(image, contours, -1, (0, 255, 0), 3)
@@ -83,9 +79,6 @@ def Drowsiness():
 
         return [secondmaxCount, secondMax]
 
-    """
-    Thresholds the image and converts it to binary
-    """
 
     def thresholdContours(mouthRegion, rectArea):
         global ratio
@@ -118,9 +111,7 @@ def Drowsiness():
         if (isinstance(secondMaxCount, np.ndarray) and len(secondMaxCount) > 0):
             cv2.drawContours(mouthRegion, [secondMaxCount], 0, (255, 0, 0), -1)
 
-    """
-    Isolates the region of interest and detects if a yawn has occured. 
-    """
+   
 
     def yawnDetector(video_capture):
         global ratio, yawnStartTime, isFirstTime, yawnRatioCount, yawnCounter
