@@ -1,0 +1,8 @@
+opencv-python
+dlib
+numpy
+tkinter
+pandas
+pygame
+geopy
+smtplib
