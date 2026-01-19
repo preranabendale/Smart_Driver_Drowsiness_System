@@ -1,8 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan 29 14:27:05 2021
-@author: om
-"""
+
 
 import tkinter as tk
 from tkinter import ttk, LEFT, END
@@ -18,14 +14,14 @@ import time
 global fn
 fn = ""
 
-# ======================== Root Window Setup ============================
+
 root = tk.Tk()
 root.configure(background="#520052")
 w, h = root.winfo_screenwidth(), root.winfo_screenheight()
 root.geometry("%dx%d+0+0" % (w, h))
 root.title("Smart Driver Drowsiness System ")
 
-# ======================== Background Video Setup ============================
+
 video_path = "v1.mp4"  # Replace with your video file
 cap = cv2.VideoCapture(video_path)
 
@@ -82,3 +78,4 @@ button_exit.place(x=50, y=290)
 
 # ======================== Start GUI ============================
 root.mainloop()
+
