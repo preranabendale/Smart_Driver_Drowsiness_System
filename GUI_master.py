@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import 
 import tkinter as tk
 from tkinter import ttk, LEFT, END
 import time
@@ -126,7 +126,7 @@ def Train_database():
     recognizer.save("trainingdata.yml")
     cv2.destroyAllWindows()
 
-# ✅ Updated function with stricter recognition threshold
+# Updated function with stricter recognition threshold
 def Test_database():
     recognizer = cv2.face.LBPHFaceRecognizer_create()
     recognizer.read('trainingdata.yml')
@@ -238,3 +238,4 @@ entry2 = tk.Entry(frame_alpr, bd=2, width=7)
 entry2.place(x=210, y=110)
 
 root.mainloop()
+
